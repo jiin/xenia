@@ -65,7 +65,13 @@ export default class Main {
   }
 
   _initElements () {
-    this._cube = new THREE.Mesh(new THREE.CubeGeometry(1, 1, 1), new THREE.MeshLambertMaterial({ color: 0xff0000 }))
+    let cubeGeometry = new THREE.CubeGeometry(1, 1, 1)
+    let cubeMaterial = new THREE.MeshLambertMaterial({
+      color: 0xff0000,
+      map: new THREE.TextureLoader().load('./assets/textures/material-test.jpg')
+    })
+
+    this._cube = new THREE.Mesh(cubeGeometry, cubeMaterial)
 
     this._scene.add(this._cube)
   }
