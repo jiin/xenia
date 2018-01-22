@@ -1,0 +1,15 @@
+{
+  "rules": {
+    "arrow-parens": 0,
+    "generator-star-spacing": 0,
+    "no-unused-vars": 1
+  },
+  "env": {
+    "browser": true
+  },
+  "parser": "babel-eslint",
+  "extends": "standard",
+  "parserOptions": {
+    "sourceType": "module"
+  }
+}

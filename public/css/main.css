@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+html,
+body {
+  background-color: #000;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; }
+
+.main {
+  width: 100%;
+  height: 100%; }
+
+.credits-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 80px; }
+  .credits-container p, .credits-container a {
+    color: #f0f0f0bd;
+    font-size: 10px;
+    text-transform: uppercase;
+    line-height: 6px;
+    letter-spacing: 2px;
+    margin-left: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-decoration: none; }
+  .credits-container a {
+    margin-left: 0; }
+  .credits-container .credits-title {
+    font-weight: 600; }
+  .credits-container a:hover {
+    text-decoration: underline; }
