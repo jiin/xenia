@@ -3,6 +3,7 @@ import * as THREE from 'three'
 import OrbitControls from 'orbit-controls-es6'
 
 // import PostProcessing from './postprocessing'
+import GUI from './gui'
 
 export default class Main {
   constructor (canvas) {
@@ -31,6 +32,8 @@ export default class Main {
 
     const controls = new OrbitControls(this._camera, this._renderer.domElement)
 
+    this._gui = new GUI()
+
     controls.enabled = true
     controls.maxDistance = 1500
     controls.minDistance = 0
@@ -39,6 +42,9 @@ export default class Main {
 
     this._initLights()
     this._initElements()
+
+    this._gui.addColor(this._cube.material, 'color', '#ff0000')
+    this._gui.addPosition(this._cube)
 
     window.addEventListener('resize', () => this._resize(), false)
 
@@ -50,11 +56,11 @@ export default class Main {
 
     this._scene.add(this._ambientLight)
 
-
     let light = new THREE.PointLight(0xf0f0f0, 1)
 
     light.position.y = 2 * 0.5
     light.position.z = -2
+
     this._scene.add(light)
   }
 

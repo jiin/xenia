@@ -1,7 +1,8 @@
 .DS_Store
 node_modules/
 build/
-public/
+public/js/
+public/css/
 npm-debug.log
 yarn-error.log
 *.sublime-workspace

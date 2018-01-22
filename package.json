@@ -24,8 +24,9 @@
   ],
   "dependencies": {
     "babel-eslint": "^8.2.1",
+    "babel-preset-env": "^1.6.1",
     "colors": "^1.1.2",
-    "controlkit": "^0.1.9",
+    "dat.gui": "^0.7.0",
     "es6-promise": "^4.0.5",
     "glslify-loader": "^1.0.2",
     "orbit-controls-es6": "^1.0.10",
